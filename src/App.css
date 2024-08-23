@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Navbar Styles -------------------------*/
+.navmdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(212, 212, 212);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navmdiv h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.navf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    border: 2px solid #7a78ec;
+    border-radius: 50px;
+    padding: 0 10px;
+    height: 6vh;
+    width: 20vw;
+    background-color: white;
+}
+
+.inp input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.inp input::placeholder {
+    color: #999;
+}
+
+.btn {
+    width: 13vw;
+    height: 6vh;
+    border: none;
+    border-radius: 50px;
+    background-color: #7a78ec;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.reficon {
+    font-size: 1.7rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 2%;
+}
+
+.reficon:hover {
+    color: #0056b3;
+}
+.icon2{
+    border: 2px solid #7a78ec;
+    border-radius: 8px;
+}
+
+
+
+/* peoject management and for all 3------------------------------------*/
+
+.pdiv {
+    margin: 1% 3%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .pcdiv {
+    display: flex;
+    flex-direction: row; 
+    overflow-x: auto; 
+    gap: 16px;
+    padding: 16px;
+    white-space: nowrap;
+    scrollbar-width: thin; 
+    scrollbar-color: #7a78ec transparent;
   }
-  to {
-    transform: rotate(360deg);
+  
+
+  .widget-card {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 30%;
   }
+  .widget-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .h-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .closeicon{
+    color: red;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+
+  /* navbar popup---------------------------------(for adding ) */
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 40%; 
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+
+
+  /* AddCategories ---------*/
+.addcatcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.addcatcont select,
+.addcatcont input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addcatcont select:focus,
+.addcatcont input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.addcatcont label {
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.addcatcont input::placeholder {
+    color: #999;
+}
+
+.addcatcont button {
+    background-color: #7a78ec;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 10vw;
+}
+
+.addcatcont button:hover {
+    background-color: #0056b3;
+}
+h2{
+    font-size: 1.4rem;
+}
+
+.filteritems{
+    margin: 1% 3%;
 }

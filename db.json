@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Project Management Dashboard"
+    },
+    {
+      "id": 2,
+      "name": "Marketing Insights Dashboard"
+    },
+    {
+      "id": 3,
+      "name": "Customer Support"
+    },
+    {
+      "id": 4,
+      "name": "Sales Dashboard"
+    }
+  ],
+  "widgets": [
+    {
+      "id": "866a",
+      "name": "Task Tracker",
+      "description": "Keep track of all your tasks, deadlines, and priorities in one place. Never miss a deadline with our Task Tracker",
+      "categoryId": 1
+    },
+    {
+      "id": "8b9e",
+      "name": "Project Timeline",
+      "description": "Visualize project’s progress with an interactive timeline. Easily manage milestones and dependencies.",
+      "categoryId": 1
+    },
+    {
+      "id": "6c8d",
+      "name": "Sales Pipeline",
+      "description": "Monitor sales pipeline from lead generation to closing deals. Track progress at each stage.",
+      "categoryId": 4
+    },
+    {
+      "id": "9227",
+      "name": "Revenue Dashboard",
+      "description": "Get real-time insights into revenue streams. Analyze sales trends and optimize sales strategy.",
+      "categoryId": 4
+    },
+    {
+      "id": "c29c",
+      "name": "Ticket Management",
+      "description": "Efficiently manage customer support tickets. Prioritize and resolve issues quickly to maintain customer satisfaction.",
+      "categoryId": 3
+    },
+    {
+      "id": "99e8",
+      "name": "Live Chat Support",
+      "description": "rovide instant support with our live chat feature. Engage with customers in real-time to solve their queries.",
+      "categoryId": 3
+    },
+    {
+      "id": "bbb6",
+      "name": "Campaign Performance",
+      "description": "Analyze the performance of your marketing campaigns. Understand what works best to maximize your ROI.",
+      "categoryId": 2
+    },
+    {
+      "id": "2243",
+      "name": "Monthly Sales Overview",
+      "description": "Gain insights into monthly sales performance. Identify trends and make informed decisions to boost revenue.",
+      "categoryId": 4
+    }
+  ]
+}
